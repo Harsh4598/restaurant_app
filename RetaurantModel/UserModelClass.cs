@@ -12,8 +12,6 @@ namespace RestaurantModel
             UserId = 0;
             firstName = "john";
             LastName = "Pierson";
-            password = "abc123"; // Sensitive
-            confirmPassword = "abc123"; // Sensitive
             contactNo = 1234567890;
             emailId = "abc@gamil.com";
            
