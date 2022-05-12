@@ -7,7 +7,7 @@ namespace RestaurantBl
     public class RestaurantOperation
     {
 
-        public RestaurantOperation()
+        protected RestaurantOperation()
         {
         }
         /// <summary>
