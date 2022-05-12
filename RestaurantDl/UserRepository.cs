@@ -37,10 +37,7 @@ namespace RestaurantDl
                     ContactNo = reader.GetDecimal(5),
                 });
             }
-            //foreach (var user in users)
-            //{
-            //    Console.WriteLine(user.FirstName);
-            //}
+            
             connection.Close();
             return users;
         }
@@ -63,8 +60,8 @@ namespace RestaurantDl
                 command.Parameters.AddWithValue("@pass", item.Password);
                 command.Parameters.AddWithValue("@contact", item.ContactNo);
                
-               var success= command.ExecuteNonQuery();
-                Console.WriteLine(success);
+               command.ExecuteNonQuery();
+               
                 result = "User Added!!!";
             }
             catch (Exception ex)
