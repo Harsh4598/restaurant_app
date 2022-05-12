@@ -39,11 +39,7 @@ namespace RestaurantDl
 
 
             }
-            //foreach (var review in reviews)
-            //{
-            //    Console.WriteLine(review.RestaurantName);
-            //}
-
+           
             return reviews;
         }
 
@@ -64,8 +60,8 @@ namespace RestaurantDl
                 command.Parameters.AddWithValue("@RateedBy", item.UserName);
                 command.Parameters.AddWithValue("@Ratetime", item.ReviewTime);
 
-                var success = command.ExecuteNonQuery();
-                Console.WriteLine(success);
+                command.ExecuteNonQuery();
+               
                 result = "Review Added!!!";
             }
             catch (Exception ex)
@@ -102,12 +98,7 @@ namespace RestaurantDl
                 });
             }
 
-            //foreach (var avgReview in avgRatingRest)
-            //{
-
-            //        Console.WriteLine(avgReview.rating+ " " + avgReview.RestaurantId);
-
-            //}
+           
             return avgRatingRest;
 
         }
