@@ -30,77 +30,33 @@ namespace RestaurantBl
                 SearchRestaurantBl.SearchRestaurantBL(searchValue);
             }
         }
-        /// <summary>
-        /// this method will display the avarage rating of each restaurant
-        /// </summary>
-        //public static void AvgRatingOfRestaurants()
-        //{
-        //    ReviewRepository reviewRepository = new();
-        //    var avgRating= reviewRepository.getAvgReview();
-
-        //    RestaurantRepository restaurantRepository = new RestaurantRepository();
-        //    var restaurants = restaurantRepository.GetItemFromDB();
-        //    foreach (var rate in avgRating.Select((value, index) => new { value, index }))
-        //    {
-        //        Console.WriteLine("\n---------------------------\n");
-        //        Console.WriteLine("          Restaurant: " + (rate.index + 1));
-        //        Console.WriteLine("");
-        //        foreach (var restaurant in restaurants)
-        //        {
-                    
-        //            if (rate.value.RestaurantId == restaurant.RestaurantId)
-        //           {
-        //                if (rate.value.Rating != "0")
-        //                {
-        //                    Console.WriteLine("Average Rating:       " + rate.value.Rating);
-        //                }
-        //                else
-        //                {
-        //                    Console.WriteLine("Average Rating:       " + "Not Rated yet");
-        //                }
-        //                Console.WriteLine("Restaurant Name:      " + restaurant.RestaurantName);
-        //                Console.WriteLine("Restaurant Address:   " + restaurant.Address1 + ", " + restaurant.city + ", " + restaurant.state);
-        //                Console.WriteLine("Restaurant Zipcode:   " + restaurant.ZipCode);
-                        
-        //                Console.WriteLine("Restaurant Cost Type: " + restaurant.CostType);
-        //                Console.WriteLine("Restaurant Website:   " + restaurant.Website);
-        //                Console.WriteLine("Restaurant PhoneNo:   " + restaurant.ContactNo);
-        //            }
-        //        }
-        //        if ((rate.index + 1) == restaurants.Count())
-        //        {
-        //            Console.WriteLine("\n---------------------------\n");
-        //        }
-        //    }
-            
-
-        //}
+        
         /// <summary>
         /// it will show haighest rating restaurant to choose
         /// </summary>
         internal static void ChooseRestaurant()
         {
-            ReviewRepository reviewRepository = new ReviewRepository();
-            var avgRating = reviewRepository.getAvgReview();
-
+           ReviewRepository reviewRepository = new ReviewRepository();
+            var avgRatings = reviewRepository.getAvgReview();
+            var avgRating = avgRatings.FirstOrDefault();
             RestaurantRepository restaurantRepository = new RestaurantRepository();
             var restaurants = restaurantRepository.GetItemFromDB();
-            foreach (var rate in avgRating.Select((value, index) => new { value, index }))
-            {
+            
+           
                 Console.WriteLine("\n---------------------------\n");
                 Console.WriteLine("You should try this restaurant next time as it has highest rating!!\n");
                 foreach (var restaurant in restaurants)
                 {
 
-                    if (rate.value.RestaurantId == restaurant.RestaurantId)
+                    if (avgRating.RestaurantId == restaurant.RestaurantId)
                     {
                         
                         Console.WriteLine("Restaurant Name:      " + restaurant.RestaurantName);
                         Console.WriteLine("Restaurant Address:   " + restaurant.Address1 + ", " + restaurant.city + ", " + restaurant.state);
                         Console.WriteLine("Restaurant Zipcode:   " + restaurant.ZipCode);
-                        if (rate.value.Rating != "0")
+                        if (avgRating.Rating != "0")
                         {
-                            Console.WriteLine("Average Rating:       " + rate.value.Rating);
+                            Console.WriteLine("Average Rating:       " + avgRating.Rating);
                         }
                         else
                         {
@@ -113,9 +69,6 @@ namespace RestaurantBl
                 }
                
                     Console.WriteLine("\n---------------------------\n");
-               
-                break;
-            }
 
         }
         /// <summary>
@@ -247,37 +200,6 @@ namespace RestaurantBl
             AddReviewLogic.AddReviewMethod(reviewModel);
 
         }
-
-        
-
-
-
-
-
-        //public static void DisplayRestaurantDetail()
-        //{
-        //    RestaurantRepository restaurantRepository = new RestaurantRepository();
-        //    var restaurants = restaurantRepository.GetItemFromDB();
-
-        //    foreach (var restaurant in restaurants.Select((value, index) => new { value, index }))
-        //    {
-        //        Console.WriteLine("\n---------------------------\n");
-        //        Console.WriteLine("          Restaurant: " + (restaurant.index + 1));
-        //        Console.WriteLine("");
-        //        Console.WriteLine("Restaurant Name:      " + restaurant.value.RestaurantName);
-        //        Console.WriteLine("Restaurant Address:   " + restaurant.value.Address1 + ", " + restaurant.value.city + ", " + restaurant.value.state);
-        //        Console.WriteLine("Restaurant Zipcode:   " + restaurant.value.ZipCode);
-        //        Console.WriteLine("Restaurant Cost Type: " + restaurant.value.CostType);
-        //        Console.WriteLine("Restaurant Website:   " + restaurant.value.Website);
-        //        Console.WriteLine("Restaurant PhoneNo:   " + restaurant.value.ContactNo);
-        //        if ((restaurant.index + 1) == restaurants.Count())
-        //        {
-        //            Console.WriteLine("\n---------------------------\n");
-        //        }
-
-        //    }
-        //}
-
 
     }
 }
