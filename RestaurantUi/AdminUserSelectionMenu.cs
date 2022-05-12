@@ -21,7 +21,7 @@ namespace RestaurantUi
 
         public string UserChoice()
         {
-            //int mainChoice = Convert.ToInt32(Console.ReadLine());
+            
             string? mainChoice = Console.ReadLine();
             int choice;
             if(!(int.TryParse(mainChoice,out choice)))
