@@ -1,0 +1,64 @@
+﻿<Properties StartupConfiguration="{170608DB-AFF8-4477-BFB3-6E99F977914B}|Default">
+  <MonoDevelop.Ide.ItemProperties.RestaurantUi PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RestaurantUi/RestaurantOperation.cs">
+    <Files>
+      <File FileName="RestaurantUi/InitialRestaurantClass.cs" Line="41" Column="76" />
+      <File FileName="RestaurantUi/RegisteredNewUserSelectionMenu.cs" Line="29" Column="12" />
+      <File FileName="RestaurantTest/ReviewModelTest.cs" Line="30" Column="43" />
+      <File FileName="RetaurantModel/ReviewModelClass.cs" Line="39" Column="31" />
+      <File FileName="RestaurantTest/UserModelTest.cs" Line="2" Column="1" />
+      <File FileName="RestaurantTest/RestaurantModelTest.cs" Line="13" Column="45" />
+      <File FileName="RestaurantTest/coverage.json" Line="2786" Column="24" />
+      <File FileName="RetaurantModel/RestaurantModelClass.cs" Line="16" Column="21" />
+      <File FileName="RetaurantModel/UserModelClass.cs" Line="81" Column="9" />
+      <File FileName="RestaurantUi/Program.cs" Line="55" Column="51" />
+      <File FileName="RestaurantUi/AdminUserSelectionMenu.cs" Line="31" Column="14" />
+      <File FileName="RestaurantUi/AdminUserMenu.cs" Line="88" Column="60" />
+      <File FileName="RestaurantBl/Authentication.cs" Line="69" Column="1" />
+      <File FileName="RestaurantUi/IMenu.cs" Line="1" Column="1" />
+      <File FileName="RestaurantTest/AuthenticationTest.cs" Line="32" Column="1" />
+      <File FileName="RestaurantUi/Logs/user.txt" Line="1" Column="1" />
+      <File FileName="RestaurantBl/SearchUser.cs" Line="13" Column="120" />
+      <File FileName="RestaurantDl/RestaurantRepository.cs" Line="23" Column="66" />
+      <File FileName="RestaurantDl/ReviewRepository.cs" Line="33" Column="25" />
+      <File FileName="RetaurantModel/AvgRating.cs" Line="4" Column="2" />
+      <File FileName="RetaurantModel/LoginModelClass.cs" Line="4" Column="5" />
+      <File FileName="RestaurantDl/Db-Connection-string-File.txt" Line="1" Column="1" />
+      <File FileName="RestaurantTest/TestResults/66b51363-a36c-4268-b429-6d904f3dbf63/coverage.cobertura.xml" Line="1" Column="1" />
+      <File FileName="RestaurantUi/AddUserClass.cs" Line="36" Column="10" />
+      <File FileName="RestaurantUi/AddRestaurant.cs" Line="74" Column="51" />
+      <File FileName="RestaurantBl/AddRestaurantLogic.cs" Line="12" Column="47" />
+      <File FileName="RestaurantUi/RestaurantOperation.cs" Line="247" Column="43" />
+      <File FileName="RestaurantBl/AddUserLogic.cs" Line="7" Column="27" />
+      <File FileName="RestaurantDl/UserRepository.cs" Line="48" Column="28" />
+      <File FileName="RestaurantUi/loginClass.cs" Line="19" Column="23" />
+      <File FileName="RestaurantBl/AddReviewLogic.cs" Line="12" Column="43" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Restaurant" expanded="True">
+            <Node name="RestaurantBl" expanded="True" />
+            <Node name="RestaurantDl" expanded="True" />
+            <Node name="RestaurantModel" expanded="True" />
+            <Node name="RestaurantUi" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Restaurant" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/harshtamakuwala/Documents/dotnet/Harsh-Tamakuwala/project-0/Retaurant_App/RestaurantUi/Program.cs" relfile="RestaurantUi/Program.cs" line="145" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
