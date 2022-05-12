@@ -12,11 +12,11 @@ namespace RestaurantModel
             UserId = 0;
             firstName = "john";
             LastName = "Pierson";
-            password = "abc123";
-            confirmPassword = "abc123";
+            password = "";
+            confirmPassword = "";
             contactNo = 1234567890;
             emailId = "abc@gamil.com";
-            // UserReview = new List<ReviewModelClass>();
+           
 
         }
 
