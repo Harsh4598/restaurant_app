@@ -46,11 +46,6 @@ namespace RestaurantDl
                     });
 
                 }
-                //foreach (var restaurant in restaurants)
-                //{
-                //    Console.WriteLine(restaurant.RestaurantName);
-                //}
-
                 return restaurants;
             }
             catch(Exception ex)
@@ -84,7 +79,7 @@ namespace RestaurantDl
                 command.Parameters.AddWithValue("@RCosttype", item.CostType);
                 command.Parameters.AddWithValue("@RWebsite", item.Website);
                 command.Parameters.AddWithValue("@RPhoneno", item.ContactNo);
-                var success = command.ExecuteNonQuery();
+                command.ExecuteNonQuery();
 
                 result = "Restaurant Added!!!";
             }
